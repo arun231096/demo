@@ -8,3 +8,4 @@ CREATE TABLE sce_department (
 								dept_name VARCHAR(40) NOT NULL,
 								dept_type VARCHAR(3) NOT NULL
 );
+dsjdahskld
