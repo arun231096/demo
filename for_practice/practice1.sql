@@ -13,5 +13,5 @@ SELECT c.`code`, c.`name`,u.university_name, c.city, c.state, c.year_opened, d.d
   ON e.cdept_id = cd.cdept_id
   JOIN designation AS ed 
   ON ed.id = e.desig_id AND ed.`name`='HOD'
- WHERE dept_name = 'Civil' 
+ WHERE dept_name = 'ECE' 
 	OR dept_name = 'Information Technology' 
