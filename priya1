@@ -1,0 +1,4 @@
+
+
+ SELECT dept.dept_name, det.dept_hod_name, det.dept_message FROM sce_department AS dept, sce_department_details AS det where dept.dept_id = det.dept_id;
+
