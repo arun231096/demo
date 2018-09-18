@@ -1,0 +1,58 @@
+  1)CREATE TABLE table_name (
+     column_1 datatype,
+     column_2 datatype,
+     column_3 datatype
+     );
+It is used to create a table with different columns.
+  Eg:
+    CREATE TABLE student (
+      roll_no number,
+      student_name varchar(10),
+      dept varchar(5)
+      );
+
+  2)INSERT INTO table_name (column_1,column_2,column_3)
+    VALUES (value_1,value_2,value_3);
+It is used to insert a values into the table.
+   Eg:
+     INSERT INTO student (roll_no,student_name,dept)
+     VALUES (1,'gokila','cse');
+
+  3)ALTER TABLE table_name 
+   ADD column_name datatype;
+add column to the table.
+   Eg:
+     ALTER TABLE student
+     ADD age number;
+
+  4)SELECT column_name(s)
+   FROM table_name
+   WHERE column_name BETWEEN value_1 AND value_2;
+It is used to display the column_name between value1 and value2.
+   Eg:
+     SELECT student_name
+     FROM student
+     WHERE student_name BETWEEN 1 AND 5;
+ 
+  5)SELECT column_name,
+     CASE
+       WHEN condition THEN 'Result_1'
+       WHEN condition THEN 'Result_2'
+       ELSE 'Result_3'
+     END
+   FROM table_name;
+It is like as if-then statement.It gives different outputs.
+  
+  6)SELECT COUNT(column_name)
+   FROM table_name;
+It is a function.It will display the number of row in a particular column.
+  Eg:
+    SELECT COUNT(student_name)
+    FROM student;
+ 
+  7)DELETE FROM table_name
+   WHERE some_column=some_value;
+It is used to delete particular row from a column.
+   Eg:
+     DELETE FROM student
+     WHERE student_name='gokila';
