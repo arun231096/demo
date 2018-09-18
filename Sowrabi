@@ -9,4 +9,5 @@ INSERT INTO student (roll_no,student_name,dept)
      VALUES (1,'Bala','cse');
 INSERT INTO student (roll_no,student_name,dept)
      VALUES (1,'Chandru','cse');
-
+SELECT COUNT(student_name)
+    FROM student;
