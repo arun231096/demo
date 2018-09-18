@@ -4,7 +4,7 @@ create table table_name (
      column3 datatype
      );
 create table employe (
-      id number,
+      id number, 
       ename varchar(10),
       add varchar(5)
       );
