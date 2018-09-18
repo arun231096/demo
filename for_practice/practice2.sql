@@ -8,8 +8,8 @@
   ON cd.cdept_id = s.cdept_id
   JOIN department AS d 
   ON d.dept_code = cd.udept_code
-  JOIN university AS u 
+  JOIN university AS us 
   ON d.univ_code = u.univ_code
- WHERE `academic_year` = '2014' 
+ WHERE `academic_year` = '2016' 
    AND `university_name` = 'Anna university' 
-   AND c.city = 'Madurai'              
+   AND c.city = 'Chennai'              
