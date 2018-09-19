@@ -56,3 +56,12 @@ It is used to delete particular row from a column.
    Eg:
      DELETE FROM student
      WHERE student_name='gokila';
+
+
+
+
+
+
+
+Name: G.Gayathri.
+Aim: My aim is to become a good developer in software.I like to develop many UIs.It is my one of the aim.
