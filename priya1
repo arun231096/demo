@@ -2,3 +2,9 @@
 
  SELECT dept.dept_name, det.dept_hod_name, det.dept_message FROM sce_department AS dept, sce_department_details AS det where dept.dept_id = det.dept_id;
 
+
+
+       Its priya.I should always respect my decision and my ambition.I don't have any idea about my 
+       ambition or my career before joining in this course.After entering into second year,i can get
+       a clear view about my career.Now my ambition,that I wish to become a software engineer.And I 
+       am  working on it.
