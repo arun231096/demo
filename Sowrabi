@@ -11,3 +11,5 @@ INSERT INTO student (roll_no,student_name,dept)
      VALUES (1,'Chandru','cse');
 SELECT COUNT(student_name)
     FROM student;
+
+My aim is to become a software engineer.I need to be unique from others in all aspects.
