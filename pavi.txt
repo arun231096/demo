@@ -1,0 +1,11 @@
+CREATE TABLE pavi (
+      roll_no number,
+      student_name varchar(20),
+      dept varchar(5));
+INSERT INTO table_name 
+     (column_1,column_2,column_3)
+     VALUES (value_1,value_2,value_3);
+It is used to insert a values into the table.
+   Eg:
+     INSERT INTO student (roll_no,student_name,dept)
+     VALUES (1,'pavi','cse');
