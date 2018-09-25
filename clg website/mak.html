@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Markquee</title>
+	<style type="text/css">
+		html, body {margin: 0;padding: 0;overflow-x: hidden;}
+
+#container {
+    width: 300%;
+    overflow: hidden;
+    -webkit-transition: margin-left 500ms ease-in-out;
+        -moz-transition: margin-left 500ms ease-in-out;
+        -o-transition: margin-left 500ms ease-in-out;
+        -ms-transition: margin-left 500ms ease-in-out;
+        transition: margin-left 500ms ease-in-out;
+}
+
+.section {
+    width: 33.3333%;
+    float: left;
+    height: 200px;
+}
+
+#section_blue {background: blue;}
+#section_red {background: red;}
+#section_green {background: green;}
+	</style>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+	var time = 2000;//milliseconds
+var index = 0;
+var container = $("#container");
+var childrenCount = $(".section").length;
+function slideToNext() {
+
+    index = (index + 1) % childrenCount;
+    console.log(index);
+    container.css({
+        marginLeft: -1 * index * 100 + "%"
+    })
+}
+var pt = window.setInterval(function() {
+    slideToNext();
+}, time)
+</script>
+<div id="container">
+
+    <div class="section" id="section_blue"></div>
+    <div class="section" id="section_red"></div>
+    <div class="section" id="section_green"></div>
+
+  </div>
+</body>
+</html>
